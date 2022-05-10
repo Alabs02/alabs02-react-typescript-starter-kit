@@ -7,6 +7,13 @@
       "dom.iterable",
       "esnext"
     ],
+    "paths": {
+      "@*": ["*"],
+      "@/pages": ["pages"],
+      "@/pages/*": ["pages/*"],
+      "@/components": ["components"],
+      "@/components/*": ["components/*"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -20,8 +27,5 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
-  },
-  "include": [
-    "src"
-  ]
+  }
 }
