@@ -23,8 +23,8 @@ html,
 body {
     width: 100%;
     height: 100%;
-    // color: $color-primary-text;
-    // background: $brand-gray-lighter;
+    color: $text-color;
+    background: $brand-white;
     scroll-behavior: smooth;
     font-size: 100%;
 }
@@ -63,7 +63,7 @@ input {
         outline: none;
     }
     &::placeholder {
-        // color: $color-secondary-text;
+        color: $app-gray;
         font-size: toRem(13);
     }
 }

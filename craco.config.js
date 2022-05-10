@@ -36,6 +36,14 @@ const performanceHint = isDev ? { hints: 'warning' } : {};
 
 module.exports = {
     webpack: {
+        alias: {
+            '@': resolveAppPath('src'),
+            '@layouts': path.resolve(__dirname, 'src/layouts'),
+            '@services': path.resolve(__dirname, 'src/services'),
+            '@utils': path.resolve(__dirname, 'src/utils'),
+            '@store': path.resolve(__dirname, 'src/store'),
+            '@interfaces': path.resolve(__dirname, 'src/interfaces'),
+        },
         performance: performanceHint,
         cache: {
             type: 'filesystem',
@@ -132,10 +140,10 @@ module.exports = {
             plugin: sassResourcesLoader,
             options: {
                 resources: [
-                    // './src/assets/scss/_colors.scss',
-                    // './src/assets/scss/_utilities.scss',
-                    // './src/assets/scss/_mixins.scss',
-                    // './src/assets/scss/_breakpoints.scss'
+                    './src/assets/scss/_colors.scss',
+                    './src/assets/scss/_utilities.scss',
+                    './src/assets/scss/_mixins.scss',
+                    './src/assets/scss/_breakpoints.scss'
                 ],
             },
         },
