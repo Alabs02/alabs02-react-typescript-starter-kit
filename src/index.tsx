@@ -1,13 +1,13 @@
 import React, { StrictMode } from 'react';
 import { render } from 'react-dom';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from 'src/reportWebVitals';
 
 // APP
-import App from './app';
+import App from 'src/app';
 
 // APP STORE
 // GLOBAL STYLES
-import "src/assets/scss/app.scss";
+import 'src/assets/scss/app.scss';
 
 // APP ROOT
 const root = document.getElementById('root') as HTMLElement;
@@ -20,5 +20,4 @@ render(
 );
 
 const isDev = process.env.NODE_ENV === 'development';
-if (isDev) 
-  reportWebVitals(console.log);
+if (isDev) reportWebVitals(console.log);

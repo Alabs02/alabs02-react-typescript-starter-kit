@@ -8,11 +8,11 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* {AuthRoutes()} {} */}
-        {/* {MainRoutes()} {} */}
+        {AuthRoutes()} {/*  AUTH ROUTES  */}
+        {MainRoutes()} {/*  MAIN ROUTES */}
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export { Router as default };

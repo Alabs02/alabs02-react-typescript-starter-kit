@@ -4,15 +4,14 @@ import { Route } from 'react-router-dom';
 // import { AuthLayout } from 'src/layouts';
 
 // PAGES
-// import { Signin, ForgotPassword } from 'src/pages/auth';
+import { Home } from 'src/pages/main';
 
 const MainRoutes = () => {
-  // return (
-  //   <Route element={<AuthLayout />}>
-  //     <Route path="signin" element={<Signin />}></Route>
-  //     <Route path="forgot-password" element={<ForgotPassword />}></Route>
-  //   </Route>
-  // );
+  return (
+    <Route path="/">
+      <Route index element={<Home />}></Route>
+    </Route>
+  );
 };
 
 export { MainRoutes as default };

@@ -1,11 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import Router from 'src/router';
 
-const App = () => {
-  return (
-    <Fragment>
-      <h1>Hello World</h1>
-    </Fragment>
-  );
-}
+const App = (): JSX.Element => {
+  return <Router />;
+};
 
 export { App as default };
