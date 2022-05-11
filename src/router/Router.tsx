@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes } from 'react-router-dom';
 
 // ROUTES
-import MainRoutes from './mainRoutes';
-import AuthRoutes from './authRoutes';
+import MainRoutes from './MainRoutes';
+import AuthRoutes from './AuthRoutes';
 
 const Router = () => {
   return (
